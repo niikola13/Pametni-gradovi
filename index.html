@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Паметни Градови</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Паметни Градови</h1>
+    <nav>
+      <ul>
+        <li><a href="#uvod">Увод</a></li>
+        <li><a href="#tehnologije">Технологије</a></li>
+        <li><a href="#primena">Примена</a></li>
+        <li><a href="#prednosti">Предности</a></li>
+        <li><a href="#izazovi">Изазови</a></li>
+        <li><a href="#kontakt">Контакт</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="uvod">
+    <h2>Шта су паметни градови?</h2>
+    <p>Паметни градови представљају урбана подручја која користе различите типове електронских метода и сензора за прикупљање података. Податке добијене из ових уређаја користе власти како би ефикасније управљале ресурсима и унапређивале квалитет живота грађана.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Smart_city.svg/1200px-Smart_city.svg.png" alt="Паметни град илустрација">
+  </section>
+
+  <section id="tehnologije">
+    <h2>Кључне Технологије</h2>
+    <ul>
+      <li>Интернет ствари (IoT)</li>
+      <li>Вештачка интелигенција (AI)</li>
+      <li>Обрада великих података (Big Data)</li>
+      <li>5G и бежичне мреже</li>
+      <li>Паметна енергетска мрежа</li>
+      <li>Паметни транспортни системи</li>
+      <li>Аутоматизовано управљање отпадом</li>
+    </ul>
+    <p>Сазнај више на <a href="https://sr.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BC%D0%B5%D1%82%D0%BD%D0%B8_%D0%B3%D1%80%D0%B0%D0%B4" target="_blank">Википедији</a>.</p>
+  </section>
+
+  <section id="primena">
+    <h2>Примена у Практичном Животу</h2>
+    <p>Паметни градови већ се примењују у многим деловима света. На пример:</p>
+    <ul>
+      <li><strong>Барселона</strong> користи IoT за управљање јавном расветом и наводњавањем.</li>
+      <li><strong>Сингапур</strong> користи AI за анализу саобраћаја у реалном времену.</li>
+      <li><strong>Беч</strong> има дигиталне платформе за праћење јавног превоза и загађења ваздуха.</li>
+    </ul>
+    <p>Прочитајте више на званичним сајтовима: <a href="https://www.smartcityvienna.at/" target="_blank">Smart City Vienna</a> и <a href="https://www.smartnation.gov.sg/" target="_blank">Smart Nation Singapore</a>.</p>
+  </section>
+
+  <section id="prednosti">
+    <h2>Предности Паметних Градова</h2>
+    <div class="prednost">
+      <h3>Ефикаснији Саобраћај</h3>
+      <p>Употреба паметних семафора и навигационих система значајно смањује гужве.</p>
+    </div>
+    <div class="prednost">
+      <h3>Уштеда Енергије</h3>
+      <p>Аутоматизовано осветљење и паметна контрола потрошње струје смањују енергетску потрошњу.</p>
+    </div>
+    <div class="prednost">
+      <h3>Заштита Животне Средине</h3>
+      <p>Континуирано праћење квалитета ваздуха и управљање отпадом помажу у очувању животне средине.</p>
+    </div>
+  </section>
+
+  <section id="izazovi">
+    <h2>Изазови и Ризици</h2>
+    <ul>
+      <li>Заштита приватности и података грађана</li>
+      <li>Високи трошкови имплементације</li>
+      <li>Питања дигиталне једнакости</li>
+      <li>Зависност од технологије и могућност сајбер напада</li>
+    </ul>
+  </section>
+
+  <section id="kontakt">
+    <h2>Контакт</h2>
+    <form onsubmit="return posaljiPoruku();">
+      <label for="ime">Име:</label>
+      <input type="text" id="ime" name="ime" required>
+
+      <label for="email">Е-пошта:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="poruka">Порука:</label>
+      <textarea id="poruka" name="poruka" required></textarea>
+
+      <button type="submit">Пошаљи</button>
+    </form>
+    <p id="potvrda"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Паметни Градови |</p>
+    <a href="https://www.smartcitiesworld.net/" target="_blank">Smart Cities World</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
