@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pametni Gradovi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pametni Gradovi</h1>
+    <nav>
+      <ul>
+        <li><a href="#uvod">Uvod</a></li>
+        <li><a href="#tehnologije">Tehnologije</a></li>
+        <li><a href="#prednosti">Prednosti</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="uvod">
+    <h2>Sta su pametni gradovi?</h2>
+    <p>Pametni gradovi koriste digitalne tehnologije za poboljšanje kvaliteta života, unapređenje usluga i održiv razvoj. Kroz IoT, big data i AI, oni optimizuju sve od saobraćaja do potrošnje energije.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Smart_city.svg/1200px-Smart_city.svg.png" alt="Pametni grad ilustracija">
+  </section>
+
+  <section id="tehnologije">
+    <h2>Ključne Tehnologije</h2>
+    <ul>
+      <li>Internet of Things (IoT)</li>
+      <li>Veštačka inteligencija</li>
+      <li>Big Data analitika</li>
+      <li>5G mreže</li>
+      <li>Održiv transport</li>
+    </ul>
+  </section>
+
+  <section id="prednosti">
+    <h2>Prednosti Pametnih Gradova</h2>
+    <div class="prednost">
+      <h3>Efikasniji saobraćaj</h3>
+      <p>Upravljanje saobraćajem u realnom vremenu smanjuje gužve.</p>
+    </div>
+    <div class="prednost">
+      <h3>Ušteda energije</h3>
+      <p>Pametna mreža i LED osvetljenje omogućavaju veliku energetsku efikasnost.</p>
+    </div>
+    <div class="prednost">
+      <h3>Bolja zaštita životne sredine</h3>
+      <p>Monitoring kvaliteta vazduha i otpada doprinosi održivosti.</p>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <form onsubmit="return posaljiPoruku();">
+      <label for="ime">Ime:</label>
+      <input type="text" id="ime" name="ime" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="poruka">Poruka:</label>
+      <textarea id="poruka" name="poruka" required></textarea>
+
+      <button type="submit">Pošalji</button>
+    </form>
+    <p id="potvrda"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pametni Gradovi</p>
+    <a href="https://en.wikipedia.org/wiki/Smart_city" target="_blank">Saznaj više</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
